@@ -30,6 +30,7 @@ Moreover I added some notions taken from secondhandsongs.com and discogs.com, su
 -   use additional source info (google, musixmatch, etc.)
 -   add path to authors directory
 -   switch to extraction from data dumps no connection required
+-   add auto language detection
 -   ...
 
 ### Database creation
