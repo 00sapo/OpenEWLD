@@ -68,7 +68,7 @@ Note that all scores are filtered and edited so that they have the following pro
 
 -   only one key signature and only one time signature
 -   no `strong` modulations (see paragraph about `tonality` field in the `features` table of the db)
--   any triplet is allowed but not other tuplet, no nested and not between different measures (that is: only with the same note valuet)
+-   any triplet is allowed but not other tuplet, no nested and not between different measures (_N.B. I thought to have removed tuplets with notes of different values, but actually they could still be there, see line 276 of the creation script_)
 -   the tonality is expressed in the MusicXML
 -   chords symbol (harmony) are always annotated in the MusicXML
 -   only one voice is present in the score, no secondary voices or chords are allowed
