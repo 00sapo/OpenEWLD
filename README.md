@@ -31,6 +31,9 @@ Moreover I added some notions taken from secondhandsongs.com and discogs.com, su
 -   add path to authors directory
 -   switch to extraction from data dumps no connection required
 -   add auto language detection
+-   correct measure numbering after removing emtpy measures
+-   solve bug on key signatures setting: no key signature is saved if setted in highest object hierarchy
+-   solve bug on time signatures: method getTimeSignatures() returns '4/4' by default
 -   ...
 
 ### Database creation
@@ -66,7 +69,7 @@ The database is organized as follows:
 
 Note that all scores are filtered and edited so that they have the following properties:
 
--   only one key signature and only one time signature
+-   only one key signature and only one time signature (but they may not be there - see [_what should be added_](#what-should-be-added))
 -   no `strong` modulations (see paragraph about `tonality` field in the `features` table of the db)
 -   any triplet is allowed but not other tuplet, no nested and not between different measures (_N.B. I thought to have removed tuplets with notes of different values, but actually they could still be there, see line 276 of the creation script_)
 -   the tonality is expressed in the MusicXML
@@ -109,8 +112,8 @@ This represents the authors. Fields are:
 Each entry describes a work from a musical point of view.
 
 -   _id_: the id of the work
--   _metric_: metric signature as stated in the original score
--   _tonality_: the tonality as detected by _krumhansl-schmuckler_ algorithm (to avoid erroneous notation given by wikifonia users). If the certainty computed by [music21] is not enough high (namely >= 0.9), the one provided in the score is used. This prevents by erroneouses key signatures provided by Wikifonia users.
+-   _metric_: metric signature as stated in the original score **N.B. This is affected by a bug, sometime 4/4 could appear but it could be wrong, see [what should be added](#what-should-be-added)** 
+-   _tonality_: the tonality as detected by _krumhansl-schmuckler_ algorithm (to avoid erroneous notation given by wikifonia users). If the certainty computed by [music21] is not enough high (namely >= 0.9), the one provided in the score is used. This prevents by erroneouses key signatures provided by Wikifonia users. **N.B. a bug in saving score made key detection unuseful, see [what should be added](#what-should-be-added) **
 -   _incipit_type_: a string, it can be 'anacrusi', 'acefalo' o 'tetico'
 -   _has_triplets_: a boolean that is true if there are triplets
 -   _features_path_: path to the csv file containing features computed by music21. Each row is a different feature. You can find a feature given its index, e.g.:
