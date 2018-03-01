@@ -2,10 +2,7 @@
 
 #### Open Enhanced Wikifonia Leadsheet Dataset
 
-_by Federico Simonetta_
-
-**N.B. All content of this repository should be free of copyright. If you think that some score is under copyright and I shouldn't distribute it, please tell me.**
-You can contact me at <http://federicosimonetta.it>
+**N.B. All content of this repository should be free of copyright. If you think that some score is under copyright and I shouldn't distribute it, please open an issue.**
 
 ### What is EWLD
 
@@ -142,12 +139,14 @@ These tables create association between a work and genres derived by discogs.com
 
 -   Part of the database coming from discogs.com (namely genres and styles info) is released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
 
--   Part of the database coming from secondhandsongs.com (namely authors info, works titles and performance date) is released under [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/)
+-   Part of the database coming from secondhandsongs.com (namely authors info, works titles and performance date) is released under [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/).
+
+-   Compressed MusicXML files and Lyrics files are intended to contain only Public Domain content.
 
 -   The remaining part of this software, included database info, is released under MIT license:
 
 
-    Copyright (c) 2018 Federico Simonetta
+    Copyright (c) 2018 00sapo
 
     Permission is hereby granted, free of charge, to any person
     obtaining a copy of this software and associated documentation
