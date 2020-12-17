@@ -1,10 +1,13 @@
 # 2018 OpenEWLD
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4332855.svg)](https://doi.org/10.5281/zenodo.4332855)
+
+
 #### Open Enhanced Wikifonia Leadsheet Dataset
 
 **N.B. All content of this repository should be free of copyright. If you think that some score is under copyright and I shouldn't distribute it, please open an issue.**
 
-[federicosimonetta.it](http://federicosimonetta.it)
+[federicosimonetta.eu.org](https://federicosimonetta.eu.org)
 
 ### What is EWLD
 
@@ -148,7 +151,7 @@ These tables create association between a work and genres derived by discogs.com
 -   The remaining part of this software, included database info, is released under MIT license:
 
 
-    Copyright (c) 2018, Federico Simonetta, [federicosimonetta.it](http://federicosimonetta.it)
+    Copyright (c) 2018, Federico Simonetta, [federicosimonetta.eu.org](http://federicosimonetta.eu.org)
 
     Permission is hereby granted, free of charge, to any person
     obtaining a copy of this software and associated documentation
@@ -173,5 +176,4 @@ These tables create association between a work and genres derived by discogs.com
 
 ### Cite us
 
-Simonetta, Federico. "Graph based representation of the music symbolic level. A music information retrieval application." (2018). [link](http://tesi.cab.unipd.it/59666/)
-[Google Scholar](https://scholar.google.it/scholar?hl=en&as_sdt=0%2C5&q=Graph+based+representation+of+the+music+symbolic+level.+A+music+information+retrieval+application&btnG=)
+Simonetta, Federico and Carnovalini, Filippo and Orio, Nicola and Rodà, Antonio. Symbolic Music Similarity through a Graph-based Representation. Proceedings of the Audio Mostly 2018 on Sound in Immersion and Emotion - AM'18. ACM Press, Year 2018. 
